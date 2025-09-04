@@ -33,3 +33,7 @@ Note: I cannot guarantee this will work with your headunit - there is a decent c
 ## User Guide
 
 The [User Guide](Docs/RE_SWC%20USER%20GUIDE.pdf) can be found in the Docs subfolder of this repository
+
+## Firmware
+
+The FW for this project is also completely open source and hosted [here on GitHub](https://github.com/lilindian16/RE_SWC_FW)
