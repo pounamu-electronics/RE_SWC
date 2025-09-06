@@ -20,7 +20,11 @@ _The RE_SWC (Rotary Encoder Steering Wheel Controller) is a plug-and-play kit to
 - Volume +/-
 - Button short press
 - Button long press
-- Button double press to activate learning mode for headunit
+- Button double press
+
+## Firmware Version 2.0.0
+
+FW version 2.0.0 makes the RE_SWC compatible with (most likely) all JVC and Kenwood headunits using the Blue/Yellow SWC input wire. Read more below
 
 ## Compatibility:
 
