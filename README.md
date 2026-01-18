@@ -1,43 +1,93 @@
-# RE_SWC - Car Stereo Volume Knob
-
-_The RE_SWC (Rotary Encoder Steering Wheel Controller) is a plug-and-play kit to add a volume knob back into your car_
+# RE_SWC - A volume knob kit for your car
 
 ![RE_SWC Product Render](/Images/RE_SWC_kit.png)
 
 <a href="https://www.tindie.com/stores/lilindian14/?ref=offsite_badges&utm_source=sellers_lilindian14&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
-## Features:
+### Features:
 
-- Simple, plug-and-play solution. Mount the volume knob to a panel in the car, solder two wires into your stereo's steering wheel control input and you are good to go
-- USB powered. Most headunits have female USB connectors for you to plug this into and power up
-- MCU: ATtiny414 - Industrial rated
-- Interrupt-driven firmware results in a smooth, user-friendly experience
-- Built-in USB to UPDI serial converter for easy programming. If you want to tinker with firmware, do so
-- Open source hardware and firmware. This includes all design files, BOM, firmware, etc
+- Simple, **plug-and-play** solution. Mount the volume knob to a panel in the car, solder two wires into your stereo's steering wheel control input and you are good to go
+- Compatible with many headunit brands and types
+  - Generic Resistive (resistance learning supported by headunits)
+  - JVC <sup>1</sup>
+  - Kenwood <sup>2</sup>
+  - Alpine
+  - Pioneer & Sony
+  - USB HID (single cable control for any android based units)
+- **USB C powered**. Most headunits have female USB connectors for you to plug this into and power up
+- MCU: WCH CH32X035 programnmed with the Arduino Framework
+- Interrupt-driven firmware results in a smooth, **user-freindly** experience
+- Firmware via USB upload - easy updates if required
+- Fully **open source** hardware and firmware. This includes all design files, BOM, firmware, etc
 
-## Functions:
+<sup>1</sup> JVC forces incremental volume control above certain values on select models. I am yet to find a way yo bypass this.
 
-- Volume +/-
-- Button short press
-- Button long press
-- Button double press
+<sup>2</sup> Kenwood forces incremental volume control above certain values on select models. I have found a way to bypass this and have implemented it by default in the firmware. This may or may not work for your unit and your miles may vary.
 
-## Firmware Version 2.0.0
+### Functions
 
-FW version 2.0.0 makes the RE_SWC compatible with (most likely) all JVC and Kenwood headunits using the Blue/Yellow SWC input wire. Read more below
-
-## Compatibility:
-
-The [Hardware Report](https://docs.google.com/spreadsheets/d/1KuhRTHHPlsPpQyRziJOaQv1jJqykjcSSAFU2pcPYcbk/edit?usp=sharing) for this project includes a compatibility matrix. As more people adopt this product, we can build a comprehensive list of compatible devices.
-
-Most headunits supporting steering wheel control input learning/remapping should support this device.
-
-Note: I cannot guarantee this will work with your headunit - there is a decent chance it should if I list it as compatible
+|        INPUT        |  GENERIC RESISTIVE  |      JVC       |    KENWOOD     |     ALPINE     | Pioneer & Sony |
+| :-----------------: | :-----------------: | :------------: | :------------: | :------------: | :------------: |
+|   Volume Knob CW    |         Any         |    Volume +    |    Volume +    |    Volume +    |    Volume +    |
+|   Volume Knob CCW   |         Any         |    Volume -    |    Volume -    |    Volume -    |    Volume -    |
+| Button Short Press  |         Any         |      Mute      |      Mute      |      Mute      |      Mute      |
+|  Button Long Press  |         Any         |   Next Track   |   Next Track   |   Next Track   |   Next Track   |
+| Button Double Press | Enter Learning Mode | Previous Track | Previous Track | Previous Track | Previous Track |
 
 ## User Guide
 
-The [User Guide](Docs/RE_SWC%20USER%20GUIDE.pdf) can be found in the Docs subfolder of this repository
+The User Guide can be found in the [Docs](Docs/) subfolder of this repository
 
 ## Firmware
 
 The FW for this project is also completely open source and hosted [here on GitHub](https://github.com/lilindian16/RE_SWC_FW)
+
+### Why did I make this?
+
+- No kits like this exist: a plug-and-play solution to add a volume knob back into your car. Mount the volume knob to a panel in the car, solder two wires and you are good to go
+
+### My headunit does not have a USB socket to power this??
+
+No worries, purchase an automotive 12V to USB adapter and plug this into it.
+
+- _Note: The 12V rail in cars is harsh. Do not cheap out on this component_
+
+### Regulatory Notice
+
+_While care has been taken to reduce EMI and maintain EMC, this product has not been certified. The user must operate this device in a way that is not harmful to important radio stations while also not being affected by these radio stations._
+
+### RESWC Impact Map
+
+[RESWC Impact Map](https://www.google.com/maps/d/edit?mid=1JDZoqSFC2vp5jECxEuNOUrSM_snK-p8&usp=sharing)
+
+### 3D Printed Housings - Design Files
+
+You can find all design and production files for all housings (controller and encoder PCB) in this repo or head to thingiverse and download: [Thingiverse - RE_SWC Housings](https://www.thingiverse.com/thing:7272091)
+
+### Volume Knob Dimensions
+
+![Volume Knob Dimensions](Images/RESWC_VK_TD.png)
+
+### Controller Housing Dimensions
+
+![Controller Housing Dimensions](Images/RESWC_Case_TD.png)
+
+### Board Bringup and O'Scope Captures
+
+#### 3V3 Regulator
+
+![3V3 Regulator (HT7533-1)](Images/BoardBringup//3V3Reg.png)
+
+#### Encoder CW, CCW Rotation and Button Press
+
+![Encoder CW](Images/BoardBringup/EncoderCW.png)
+![Encoder CCW](Images/BoardBringup/EncoderCCW.png)
+![Encoder Button](Images/BoardBringup/Button.png)
+
+#### SPI Bus (Mode 0)
+
+![SPI](Images/BoardBringup/SPI.png)
+
+#### Apline SWC Output
+
+![Alpine SWC Output](Images/BoardBringup/Alpine.png)

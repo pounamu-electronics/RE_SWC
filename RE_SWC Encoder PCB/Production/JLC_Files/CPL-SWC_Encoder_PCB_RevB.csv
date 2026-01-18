@@ -1,0 +1,3 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+J101,BM05B-SRSS-TBT(LF)(SN),JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical,150.0,-100.0,270.0,bottom
+SW101,Rotary Encoder,RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx,149.75,-100.0,0.0,top
