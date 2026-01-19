@@ -76,7 +76,8 @@ You can find all design and production files for all housings (controller and en
 
 #### 3V3 Regulator
 
-![3V3 Regulator (HT7533-1)](Images/BoardBringup//3V3Reg.png)
+![3V3 Regulator (HT7533-1) DC Coupling](Images/BoardBringup/3V3_DC.jpg)
+![3V3 Regulator (HT7533-1) AC Coupling](Images/BoardBringup/3V3_AC.jpg)
 
 #### Encoder CW, CCW Rotation and Button Press
 
