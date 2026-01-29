@@ -20,7 +20,7 @@
 - Firmware via USB upload - easy updates if required
 - Fully **open source** hardware and firmware. This includes all design files, BOM, firmware, etc
 
-<sup>1</sup> JVC forces incremental volume control above certain values on select models. I am yet to find a way yo bypass this.
+<sup>1</sup> JVC forces incremental volume control above certain values on select models. I am yet to find a way to bypass this.
 
 <sup>2</sup> Kenwood forces incremental volume control above certain values on select models. I have found a way to bypass this and have implemented it by default in the firmware. This may or may not work for your unit and your miles may vary.
 
