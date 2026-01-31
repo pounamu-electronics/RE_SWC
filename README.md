@@ -52,9 +52,14 @@ No worries, purchase an automotive 12V to USB adapter and plug this into it.
 
 - _Note: The 12V rail in cars is harsh. Do not cheap out on this component_
 
-### Regulatory Notice
+### FCC Compliance Statement
 
-_While care has been taken to reduce EMI and maintain EMC, this product has not been certified. The user must operate this device in a way that is not harmful to important radio stations while also not being affected by these radio stations._
+This device complies with Part 15 of the FCC Rules. Operation is subject to the following two conditions:
+
+1.  This device may not cause harmful interference, and
+2.  this device must accept any interference received, including interference that may cause undesired operation.
+
+Please note, if you manufacture this yourself, FCC compliance is not valid. Pounamu Electronics is the sole manufacturer listed on the FCC SDoC.
 
 ### RESWC Impact Map
 
