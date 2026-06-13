@@ -2,7 +2,7 @@
 
 ![RE_SWC Product Render](Images/RESWC_V2.png)
 
-<a href="https://www.tindie.com/stores/lilindian14/?ref=offsite_badges&utm_source=sellers_lilindian14&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+<a href="https://lectronz.com/stores/pounamu-electronics" alt="Buy it on Lectronz"><img src="https://lectronz-images.b-cdn.net/static/badges/buy-it-on-lectronz-medium.png" /></a>
 
 ### Features:
 
@@ -12,8 +12,9 @@
   - JVC <sup>1</sup>
   - Kenwood <sup>2</sup>
   - Alpine
-  - Pioneer & Sony
+  - Pioneer
   - USB HID (single cable control for any android based units)
+  - Sony
 - **USB C powered**. Most headunits have female USB connectors for you to plug this into and power up
 - MCU: WCH CH32X035 programnmed with the Arduino Framework
 - Interrupt-driven firmware results in a smooth, **user-freindly** experience
@@ -26,13 +27,13 @@
 
 ### Functions
 
-|        INPUT        |  GENERIC RESISTIVE  |      JVC       |    KENWOOD     |     ALPINE     | Pioneer & Sony |
-| :-----------------: | :-----------------: | :------------: | :------------: | :------------: | :------------: |
-|   Volume Knob CW    |         Any         |    Volume +    |    Volume +    |    Volume +    |    Volume +    |
-|   Volume Knob CCW   |         Any         |    Volume -    |    Volume -    |    Volume -    |    Volume -    |
-| Button Short Press  |         Any         |      Mute      |      Mute      |      Mute      |      Mute      |
-|  Button Long Press  |         Any         |   Next Track   |   Next Track   |   Next Track   |   Next Track   |
-| Button Double Press | Enter Learning Mode | Previous Track | Previous Track | Previous Track | Previous Track |
+|        INPUT        |  GENERIC RESISTIVE  |      JVC       |    KENWOOD     |     ALPINE     |    PIONEER     |    USB HID     |      SONY      |
+| :-----------------: | :-----------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+|   Volume Knob CW    |         Any         |    Volume +    |    Volume +    |    Volume +    |    Volume +    |    Volume +    |    Volume +    |
+|   Volume Knob CCW   |         Any         |    Volume -    |    Volume -    |    Volume -    |    Volume -    |    Volume -    |    Volume -    |
+| Button Short Press  |         Any         |      Mute      |      Mute      |      Mute      |      Mute      |      Mute      |      Mute      |
+|  Button Long Press  |         Any         |   Next Track   |   Next Track   |   Next Track   |   Next Track   |   Next Track   |   Next Track   |
+| Button Double Press | Enter Learning Mode | Previous Track | Previous Track | Previous Track | Previous Track | Previous Track | Previous Track |
 
 ## User Guide
 
