@@ -25,21 +25,40 @@
 
 <sup>2</sup> Kenwood forces incremental volume control above certain values on select models. I have found a way to bypass this and have implemented it by default in the firmware. This may or may not work for your unit and your miles may vary.
 
-### Functions
+### Default Output Mapping
 
-|        INPUT        |  GENERIC RESISTIVE  |      JVC       |    KENWOOD     |     ALPINE     |    PIONEER     |    USB HID     |      SONY      |
-| :-----------------: | :-----------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
-|   Volume Knob CW    |         Any         |    Volume +    |    Volume +    |    Volume +    |    Volume +    |    Volume +    |    Volume +    |
-|   Volume Knob CCW   |         Any         |    Volume -    |    Volume -    |    Volume -    |    Volume -    |    Volume -    |    Volume -    |
-| Button Short Press  |         Any         |      Mute      |      Mute      |      Mute      |      Mute      |      Mute      |      Mute      |
-|  Button Long Press  |         Any         |   Next Track   |   Next Track   |   Next Track   |   Next Track   |   Next Track   |   Next Track   |
-| Button Double Press | Enter Learning Mode | Previous Track | Previous Track | Previous Track | Previous Track | Previous Track | Previous Track |
+|                    INPUT                     |        OUTPUT        |
+| :------------------------------------------: | :------------------: |
+|     Volume Knob Clockwise Rotation (CW)      |       Volume+        |
+| Volume Knob Counter Clockwise Rotation (CCW) |       Volume-        |
+|              Button Short Press              |       Mute/ATT       |
+|              Button Long Press               |      Next Track      |
+|   Button Double Press (Generic Resistive)    | Enable Learning Mode |
+|         Button Double Press (Others)         |    Previous Track    |
 
-## User Guide
+### Output Function Support
+
+_FW v_4.0.0_
+
+|     OUTPUT     |        JVC         |      KENWOOD       |       ALPINE       |      PIONEER       |      USB HID       |        SONY        |
+| :------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: |
+|    Volume+     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+|    Volume-     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+|    Mute/ATT    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+|   Next Track   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Previous Track | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+|   Play/Pause   |        :x:         | :heavy_check_mark: |        :x:         |        :x:         | :heavy_check_mark: |        :x:         |
+| Change Source  |        :x:         |        :x:         |        :x:         | :heavy_check_mark: |        :x:         |        :x:         |
+
+### User Config
+
+Remap all the input for the Volume Knob Kit to any supported output using the [Configurator Tool](https://pounamu-electronics.github.io/)
+
+### User Guide
 
 The User Guide can be found in the [Docs](Docs/) subfolder of this repository
 
-## Firmware
+### Firmware
 
 The FW for this project is also completely open source and hosted [here on GitHub](https://github.com/lilindian16/RE_SWC_FW)
 
