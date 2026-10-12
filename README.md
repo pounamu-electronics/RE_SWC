@@ -50,6 +50,22 @@ _FW v_4.0.0_
 |   Play/Pause   |        :x:         | :heavy_check_mark: |        :x:         |        :x:         | :heavy_check_mark: |        :x:         |
 | Change Source  |        :x:         |        :x:         |        :x:         | :heavy_check_mark: |        :x:         |        :x:         |
 
+### Resistance Mapping Table
+
+k = kilo i.e. 1,000x e.g. 1k = 1,000 ohms <br> 11.25k = 11,250 ohms
+
+|        FUNCTION         | PIONEER | SONY  |
+| :---------------------: | :-----: | :---: |
+|        Volume +         |   16k   | 16.8k |
+|        Volume -         |   24k   | 23.6k |
+|        Mute/ATT         |  3.5k   | 4.4k  |
+|       Next Track        |   8k    | 8.8k  |
+|     Previous Track      | 11.25k  | 12.1k |
+|       Play/Pause        |    -    |   -   |
+|      Change Source      |  1.2k   |   -   |
+| Default Output On Time  |  50ms   | 50ms  |
+| Default Output Off Time |  50ms   | 50ms  |
+
 ### User Config
 
 Remap all the input for the Volume Knob Kit to any supported output using the [Configurator Tool](https://pounamu-electronics.github.io/)
