@@ -52,7 +52,7 @@ _FW v_4.0.0_
 
 ### Resistance Mapping Table
 
-k = kilo i.e. 1,000x e.g. 1k = 1,000 ohms <br> 11.25k = 11,250 ohms
+k = kilo i.e. 1,000x <br> 1k = 1,000 ohms <br> 11.25k = 11,250 ohms
 
 |        FUNCTION         | PIONEER | SONY  |
 | :---------------------: | :-----: | :---: |
@@ -65,6 +65,8 @@ k = kilo i.e. 1,000x e.g. 1k = 1,000 ohms <br> 11.25k = 11,250 ohms
 |      Change Source      |  1.2k   |   -   |
 | Default Output On Time  |  50ms   | 50ms  |
 | Default Output Off Time |  50ms   | 50ms  |
+
+Headunit resistance input tolerance generally allows for +- 10%. Rounding the resistance mapped value up or down to the nearest 1k should be okay in most circumstances
 
 ### User Config
 
